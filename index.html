@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geeks Solutions | Conectando Ideas, Transformando Tecnología</title>
+    <!-- Google Fonts: Montserrat (Light, Medium, SemiBold, Bold, Black) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brandCyan: "#63CFE3",
+              brandBlack: "#000000",
+              darkBg: "#090B0E",
+              cardBg: "#12161F",
+            },
+            fontFamily: {
+              sans: ["Montserrat", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+        background-color: #090b0e;
+        color: #ffffff;
+      }
+      .glow-cyan {
+        box-shadow: 0 0 25px rgba(99, 207, 227, 0.25);
+      }
+      .text-gradient {
+        background: linear-gradient(135deg, #ffffff 0%, #63cfe3 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    </style>
+  </head>
+  <body class="antialiased selection:bg-brandCyan selection:text-black">
+    <!-- NAVIGATION HEADER -->
+    <header
+      class="fixed top-0 left-0 w-full z-50 bg-brandBlack/80 backdrop-blur-md border-b border-white/10"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between md:flex-row"
+      >
+        <!-- LOGO: Monogram + Typography -->
+        <a href="#" class="flex items-center gap-3 group">
+          <!-- Monograma simplificado SVG estilo G-S entrelazado -->
+          <div
+            class="w-10 h-10 bg-brandCyan rounded-lg flex items-center justify-center font-black text-black text-xl transition-transform group-hover:scale-105"
+          >
+            GS
+          </div>
+          <div class="tracking-wider">
+            <span class="font-black text-xl text-white">GEEKS</span>
+            <span class="font-semibold text-xl text-brandCyan">SOLUTIONS</span>
+          </div>
+        </a>
+
+        <!-- Nav Links -->
+        <nav
+          class="hidden md:flex items-center gap-8 font-medium text-sm text-gray-300"
+        >
+          <a href="#inicio" class="hover:text-brandCyan transition-colors"
+            >Inicio</a
+          >
+          <a href="#projects" class="hover:text-brandCyan transition-colors"
+            >Proyectos</a
+          >
+          <a href="#nosotros" class="hover:text-brandCyan transition-colors"
+            >Nosotros</a
+          >
+        </nav>
+
+        <!-- CTA Header -->
+        <a
+          href="#contacto"
+          class="hidden sm:inline-flex bg-brandCyan text-black font-bold px-5 py-2.5 rounded-md hover:bg-white transition-all transform hover:-translate-y-0.5"
+        >
+          Contactar
+        </a>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section
+      id="inicio"
+      class="pt-32 pb-20 md:pt-44 md:pb-32 px-6 relative overflow-hidden"
+    >
+      <!-- Background Accents -->
+      <div
+        class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brandCyan/10 rounded-full blur-[120px] pointer-events-none"
+      ></div>
+
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6 text-center md:text-left">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-brandCyan/30 bg-brandCyan/10 text-brandCyan text-xs font-semibold tracking-wider uppercase"
+          >
+            <span
+              class="w-2 h-2 rounded-full bg-brandCyan animate-pulse"
+            ></span>
+            Soluciones Tecnológicas Integrales
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight">
+            Conectando ideas, <br />
+            <span class="text-gradient">transformando tecnología</span>
+          </h1>
+
+          <p
+            class="text-gray-400 text-base sm:text-lg font-light max-w-xl mx-auto md:mx-0"
+          >
+            Llevamos la excelencia técnica a cada aspecto de tu vida digital.
+            Expertos en asesorías informáticas, infraestructura de redes y venta
+            de equipos de alta gama.
+          </p>
+
+          <div
+            class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 pt-4"
+          >
+            <!-- <a
+              href="#contacto"
+              class="w-full sm:w-auto bg-brandCyan text-black font-bold px-8 py-3.5 rounded-md hover:bg-white transition-all glow-cyan text-center"
+            >
+              Solicitar Asesoría
+            </a> -->
+            <!-- <a
+              href="#servicios"
+              class="w-full sm:w-auto border border-white/20 text-white font-semibold px-8 py-3.5 rounded-md hover:border-brandCyan hover:text-brandCyan transition-all text-center"
+            >
+              Ver Servicios
+            </a> -->
+          </div>
+        </div>
+
+        <div class="relative flex justify-center">
+          <div
+            class="w-full max-w-md bg-cardBg border border-white/10 rounded-2xl p-8 shadow-2xl relative"
+          >
+            <div
+              class="flex items-center justify-between border-b border-white/10 pb-4 mb-6"
+            >
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-red-500"></span>
+                <span class="w-3 h-3 rounded-full bg-yellow-500"></span>
+                <span class="w-3 h-3 rounded-full bg-green-500"></span>
+              </div>
+              <span class="text-xs text-gray-400 font-mono"
+                >Geeks_Solutions_v2026.sys</span
+              >
+            </div>
+
+            <div class="space-y-4 font-mono text-sm">
+              <div class="text-brandCyan">$ status --system</div>
+              <div class="text-gray-300">
+                ✔ Infraestructura de Redes:
+                <span class="text-green-400">Optimizada</span>
+              </div>
+              <div class="text-gray-300">
+                ✔ Asesoría Técnica: <span class="text-green-400">Activa</span>
+              </div>
+              <div class="text-gray-300">
+                ✔ Catálogo de Equipos:
+                <span class="text-green-400">Disponible</span>
+              </div>
+              <div
+                class="p-4 bg-brandBlack rounded-lg border border-brandCyan/20 text-xs text-gray-400 mt-6"
+              >
+                <span class="text-brandCyan font-bold">Valores de Marca:</span>
+                Innovación constante, transparencia y cercanía humana.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="py-24 bg-brandBlack border-y border-white/5">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <h2 class="text-3xl sm:text-4xl font-black mb-4">
+            Nuestros Proyectos
+          </h2>
+          <p class="text-gray-400 font-light">
+            Aquí te mostramos nuestros proyectos realizados.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <a href="projects.html">
+            <div
+              class="bg-cardBg p-8 rounded-xl border border-white/5 hover:border-brandCyan/50 transition-all group"
+            >
+              <div
+                class="w-14 h-14 bg-brandCyan/10 text-brandCyan rounded-lg flex items-center justify-center text-2xl my-0 mx-auto mb-6 group-hover:bg-brandCyan group-hover:text-black transition-all"
+              >
+                💻
+              </div>
+
+              <h3 class="text-xl font-bold mb-3">
+                Aplicaciones web | Apps para móviles
+              </h3>
+              <p class="text-gray-400 text-sm leading-relaxed font-light">
+                Desarrollamos aplicaciones de Software, para web, iOS y Android,
+                hechas por nosotros, para brindar soluciones a situaciones
+                cotidianas con una visión Geek.
+              </p>
+            </div>
+          </a>
+
+          <div
+            class="bg-cardBg p-8 rounded-xl border border-white/5 hover:border-brandCyan/50 transition-all group"
+          >
+            <div
+              class="w-14 h-14 bg-brandCyan/10 text-brandCyan rounded-lg flex items-center justify-center text-2xl my-0 mx-auto mb-6 group-hover:bg-brandCyan group-hover:text-black transition-all"
+            >
+              🌐
+            </div>
+            <h3 class="text-xl font-bold mb-3">Más proyectos</h3>
+            <p class="text-gray-400 text-sm leading-relaxed font-light">
+              Proximamente....
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="nosotros" class="py-24 px-6 relative">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl sm:text-4xl font-black mb-6">
+            Sobre Geeks Solutions
+          </h2>
+          <p class="text-gray-300 mb-4 leading-relaxed font-light">
+            Nacemos de la pasión por la tecnología y la búsqueda constante de
+            soluciones innovadoras en el mundo informático. Nos enorgullecemos
+            de ser expertos dedicados a llevar la excelencia técnica a cada
+            cliente.
+          </p>
+          <p class="text-gray-400 leading-relaxed font-light">
+            Nuestra personalidad es
+            <strong class="text-white font-semibold"
+              >amigable y accesible</strong
+            >, pero profundamente competente y confiable. Combinamos rigor
+            técnico con un fuerte sentido de empatía y humanidad.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-xl sm:text-2xl mb-4">
+            ¿Quieres saber más sobre nosotros?
+          </h2>
+          <p class="text-gray-400 leading relaxed font-light">
+            acá puedes buscar más información sobre nosotros
+          </p>
+        </div>
+        <!-- Identidad visual / Colores de marca preview -->
+        <!-- <div class="grid grid-cols-2 gap-4">
+          <div
+            class="bg-brandBlack p-6 rounded-xl border border-white/10 text-center"
+          >
+            <div class="w-12 h-12 rounded-full bg-brandCyan mx-auto mb-3"></div>
+            <div class="font-bold text-sm">Azul Cyan</div>
+            <div class="text-xs text-gray-500 font-mono">#63CFE3</div>
+            <p class="text-xs text-gray-400 mt-2">Innovación y Confianza</p>
+          </div>
+
+          <div
+            class="bg-cardBg p-6 rounded-xl border border-white/10 text-center"
+          >
+            <div
+              class="w-12 h-12 rounded-full bg-brandBlack border border-white/20 mx-auto mb-3"
+            ></div>
+            <div class="font-bold text-sm">Negro Profundo</div>
+            <div class="text-xs text-gray-500 font-mono">#000000</div>
+            <p class="text-xs text-gray-400 mt-2">
+              Elegancia y Profesionalismo
+            </p>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- <section
+      id="valores"
+      class="py-24 bg-brandBlack/50 border-t border-white/5"
+    >
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <h2 class="text-3xl sm:text-4xl font-black mb-4">Nuestros Valores</h2>
+          <p class="text-gray-400 font-light">
+            Principios que guían cada uno de nuestros proyectos y asesorías.
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="p-6 bg-cardBg rounded-lg border border-white/5">
+            <h4 class="font-bold text-brandCyan text-lg mb-2">
+              Expertos Apasionados
+            </h4>
+            <p class="text-gray-400 text-xs leading-relaxed font-light">
+              Entusiastas de la tecnología dedicados a mantenernos a la
+              vanguardia del sector.
+            </p>
+          </div>
+
+          <div class="p-6 bg-cardBg rounded-lg border border-white/5">
+            <h4 class="font-bold text-brandCyan text-lg mb-2">
+              Conexiones Significativas
+            </h4>
+            <p class="text-gray-400 text-xs leading-relaxed font-light">
+              Construimos relaciones sólidas entendiendo las necesidades reales
+              de cada cliente.
+            </p>
+          </div>
+
+          <div class="p-6 bg-cardBg rounded-lg border border-white/5">
+            <h4 class="font-bold text-brandCyan text-lg mb-2">
+              Innovación Constante
+            </h4>
+            <p class="text-gray-400 text-xs leading-relaxed font-light">
+              Buscamos continuamente nuevas formas de abordar desafíos digitales
+              complejos.
+            </p>
+          </div>
+
+          <div class="p-6 bg-cardBg rounded-lg border border-white/5">
+            <h4 class="font-bold text-brandCyan text-lg mb-2">
+              Confianza y Transparencia
+            </h4>
+            <p class="text-gray-400 text-xs leading-relaxed font-light">
+              Operamos con honestidad en cada interacción para garantizar
+              resultados reales.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section id="contacto" class="py-24 px-6">
+      <div
+        class="max-w-4xl mx-auto bg-cardBg rounded-2xl border border-brandCyan/30 p-8 sm:p-12 relative overflow-hidden"
+      >
+        <div class="text-center mb-10">
+          <h2 class="text-3xl font-black mb-3">
+            ¿Listo para transformar tu tecnología?
+          </h2>
+          <p class="text-gray-400 font-light">
+            Ponte en contacto con nuestro equipo experto para una cotización o
+            consulta.
+          </p>
+        </div>
+
+        <form
+          id="contactForm"
+          class="space-y-4 max-w-md mx-auto"
+          onsubmit="
+            event.preventDefault();
+            alert('¡Gracias por comunicarte con Geeks Solutions!');
+          "
+        >
+          <div>
+            <input
+              type="text"
+              id="name"
+              placeholder="Nombre completo"
+              required
+              class="w-full bg-brandBlack border border-white/10 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brandCyan transition-colors"
+            />
+          </div>
+          <div>
+            <input
+              id="email"
+              type="email"
+              placeholder="Correo electrónico"
+              required
+              class="w-full bg-brandBlack border border-white/10 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brandCyan transition-colors"
+            />
+          </div>
+          <div>
+            <textarea
+              id="message"
+              rows="4"
+              placeholder="¿En qué te podemos ayudar?"
+              required
+              class="w-full bg-brandBlack border border-white/10 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brandCyan transition-colors"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-brandCyan text-black font-bold py-3.5 rounded-lg hover:bg-white transition-all"
+          >
+            Enviar Mensaje
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer
+      class="bg-brandBlack py-12 border-t border-white/10 text-gray-500 text-xs"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-6"
+      >
+        <div class="flex items-center gap-2">
+          <span class="font-black text-white text-sm">GEEKS</span>
+          <span class="font-semibold text-brandCyan text-sm">SOLUTIONS</span>
+        </div>
+        <div>&copy; 2026 Geeks Solutions. Todos los derechos reservados.</div>
+      </div>
+    </footer>
+
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", async function (event) {
+          event.preventDefault();
+
+          const formData = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            message: document.getElementById("message").value,
+          };
+
+          const submitButton = event.target.querySelector(
+            'button[type="submit"]',
+          );
+          submitButton.disabled = true;
+          submitButton.innerText = "Enviando...";
+
+          try {
+            const response = await fetch("http://localhost:5055/api/Contacts", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(formData),
+            });
+
+            if (response.ok) {
+              alert("¡Gracias! Tu mensaje ha sido enviado correctamente.");
+              document.getElementById("contactForm").reset();
+            } else {
+              const errorData = await response.json();
+              console.error("Error del servidor:", errorData);
+              alert(
+                "Hubo un problema al enviar el mensaje. Por favor intenta de nuevo.",
+              );
+            }
+          } catch (error) {
+            console.error("Error de red/conexión:", error);
+            alert(
+              "No se pudo conectar con el servidor. Verifica que el backend esté ejecutándose.",
+            );
+          } finally {
+            submitButton.disabled = false;
+            submitButton.innerText = "Enviar Mensaje";
+          }
+        });
+    </script>
+  </body>
+</html>
