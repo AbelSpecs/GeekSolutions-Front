@@ -424,6 +424,9 @@
     </footer>
 
     <script>
+      const API_URL = "https://api.geeksolutions.com/api/Contacts";
+      const API_URL_DEV = "http://localhost:5055/api/Contacts";
+
       document
         .getElementById("contactForm")
         .addEventListener("submit", async function (event) {
@@ -442,7 +445,7 @@
           submitButton.innerText = "Enviando...";
 
           try {
-            const response = await fetch("http://localhost:5055/api/Contacts", {
+            const response = await fetch(API_URL, {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
